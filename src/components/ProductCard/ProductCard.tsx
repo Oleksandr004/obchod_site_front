@@ -11,7 +11,24 @@ type Props = {
 }
 
 const ProductCard = ({ width, height, id, name, image }: Props) => {
-	const imageUrl = image && image?.length > 0 ? image : productImg
+	const fallbackImage =
+		typeof productImg === 'string' ? productImg : String(productImg)
+
+	// Функция нормализации пути картинки: берет только путь (pathname) из полного URL
+	const normalizeImageUrl = (url: string | undefined) => {
+		if (!url) return fallbackImage
+
+		try {
+			// Если url — полный URL с доменом, вернем только путь (например /obrazky/0002/image.jpg)
+			const parsedUrl = new URL(url)
+			return parsedUrl.pathname
+		} catch {
+			// Если не URL, вернем как есть
+			return url
+		}
+	}
+
+	const imageUrl = normalizeImageUrl(image)
 
 	return (
 		<Link to={`/${id}`}>
