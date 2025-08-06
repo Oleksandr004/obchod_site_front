@@ -1,0 +1,43 @@
+.container {
+	max-width: 298px;
+	padding: 0 15px;
+}
+.name {
+	color: rgb(53, 53, 53);
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	margin: 20px 0;
+	text-align: center;
+
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.price {
+	color: rgb(255, 183, 0);
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 29px;
+}
+.btn {
+	display: block;
+	color: rgb(53, 53, 53);
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	padding: 11px 66px;
+	background: rgb(255, 183, 0);
+	margin-top: 30px;
+}
+.image {
+	width: 268px;
+	height: 279px;
+	max-width: 268px;
+	max-height: 279px;
+}

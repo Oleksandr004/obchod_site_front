@@ -1,0 +1,20 @@
+.container {
+	max-width: 1190px;
+	margin: 0 auto;
+	padding: 121px 15px 0;
+}
+.title {
+	color: rgb(53, 53, 53);
+	font-family: Montserrat;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 40px;
+}
+.grid {
+	display: grid;
+	grid-template-columns: 367px 367px 367px;
+	grid-template-rows: 317px 317px 317px;
+	gap: 30px;
+	padding-bottom: 120px;
+}

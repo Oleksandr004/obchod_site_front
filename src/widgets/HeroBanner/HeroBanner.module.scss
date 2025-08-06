@@ -1,0 +1,43 @@
+.hero_banner {
+	background-image: url(../../assets/hero-banner-bg.png);
+}
+.container {
+	max-width: 1190px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.title {
+	padding-top: 130px;
+	color: rgb(255, 255, 255);
+	font-family: Montserrat;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 73px;
+}
+
+.subtitle {
+	color: rgb(255, 255, 255);
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 150%;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.btn {
+	position: relative;
+	padding-bottom: 238px;
+	max-width: 217px;
+	display: block;
+	cursor: pointer;
+	p {
+		color: rgb(53, 53, 53);
+		font-family: Montserrat;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1.2;
+		position: absolute;
+		top: 15px;
+		left: 43px;
+	}
+}

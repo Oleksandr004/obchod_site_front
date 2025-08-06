@@ -1,0 +1,41 @@
+.container {
+	max-width: 694px;
+	padding: 0 15px;
+	box-shadow: 0px 0px 10px 0px rgba(37, 37, 37, 0.08);
+}
+.title {
+	color: rgb(53, 53, 53);
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
+	margin-bottom: 25px;
+}
+.inputs {
+	border: 1px solid rgb(219, 219, 219);
+	border-radius: 5px;
+	padding: 5px 0 5px 15px;
+	width: 287px;
+	height: 40px;
+}
+.textarea {
+	resize: none;
+	border: 1px solid rgb(219, 219, 219);
+	border-radius: 5px;
+	width: 599px;
+	height: 170px;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	padding: 5px 15px;
+}
+.btn {
+	color: rgb(53, 53, 53);
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: 0%;
+	padding: 11px 101px;
+	background: rgb(255, 183, 0);
+	display: block;
+}

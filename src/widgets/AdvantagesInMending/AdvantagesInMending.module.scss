@@ -1,0 +1,32 @@
+.container {
+	max-width: 1190px;
+	margin: 40px auto 0;
+	padding: 0 15px;
+}
+.row {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.name {
+	color: rgb(53, 53, 53);
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+}
+.description {
+	color: rgb(69, 69, 69);
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 150%;
+}
+.link {
+	margin-top: 15px;
+	color: rgb(255, 183, 0);
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 150%;
+}
