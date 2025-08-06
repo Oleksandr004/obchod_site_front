@@ -5,6 +5,10 @@
 			"dest": "/assets/$1"
 		},
 		{
+			"src": "^/obrazky/(.*)",
+			"dest": "/obrazky/$1"
+		},
+		{
 			"src": "/(.*)",
 			"dest": "/index.html"
 		}
