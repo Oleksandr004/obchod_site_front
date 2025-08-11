@@ -9,24 +9,34 @@ const PoppyProductSection = ({ product }: Props) => {
 	return (
 		<div>
 			<table className={styles.table}>
-				<tbody>
-					<tr>
-						<td className={styles.label}>Obchodní značka</td>
-						<td>Lorem Ipsum is simply</td>
-					</tr>
-					<tr>
-						<td className={styles.label}>Typ</td>
-						<td>Lorem Ipsum is simply</td>
-					</tr>
-					<tr>
-						<td className={styles.label}>Materiál plátna</td>
-						<td>Lorem Ipsum is simply</td>
-					</tr>
-					<tr>
-						<td className={styles.label}>Šířka čepele, mm</td>
-						<td>Lorem Ipsum is simply</td>
-					</tr>
-				</tbody>
+				<table className={styles.table}>
+					<tbody>
+						{product.category && (
+							<tr>
+								<td className={styles.label}>Kategorie</td>
+								<td>{product.category}</td>
+							</tr>
+						)}
+						{product.weight !== 0 && (
+							<tr>
+								<td className={styles.label}>Hmotnost</td>
+								<td>{product.weight}</td>
+							</tr>
+						)}
+						{product.unitsPerPackage !== 0 && (
+							<tr>
+								<td className={styles.label}>Počet kusů v balení</td>
+								<td>{product.unitsPerPackage}</td>
+							</tr>
+						)}
+						{product.unitsPerPalette !== 0 && (
+							<tr>
+								<td className={styles.label}>Jednotky na paletě</td>
+								<td>{product.unitsPerPalette}</td>
+							</tr>
+						)}
+					</tbody>
+				</table>
 			</table>
 			<p className={styles.text}>
 				{[
