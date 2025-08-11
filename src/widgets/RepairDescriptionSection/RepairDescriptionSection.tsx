@@ -9,6 +9,8 @@ import TestingImg from '../../assets/HowIsTheRepairSection/Testing.svg'
 import orrangeBtnBg from '../../assets/HowIsTheRepairSection/orrange_btn_bg.svg'
 import whiteBtnBg from '../../assets/HowIsTheRepairSection/white_btn_bg.svg'
 
+import { Link } from 'react-router-dom'
+
 const RepairDescriptionSection = () => {
 	return (
 		<div className={styles.container}>
@@ -88,10 +90,10 @@ const RepairDescriptionSection = () => {
 									<img src={orrangeBtnBg} alt='orrange btn bg img' />
 									<p>Objednat opravu</p>
 								</div>
-								<div className={styles.btn}>
+								<Link to='/contact' className={styles.btn}>
 									<img src={whiteBtnBg} alt='white btn bg img' />
 									<p style={{ left: 56 }}>Kontaktujte nás</p>
-								</div>
+								</Link>
 							</div>
 						</div>
 					</div>
