@@ -3,8 +3,11 @@ export type Product = {
 	name: string
 	price: number
 	vat: number
-	quantity: number
 	category: string
+	weight: number
+	quantity: number
+	unitsPerPackage: number
+	unitsPerPalette: number
 	image: string
 	description?: string
 	desc1?: string
